@@ -1,0 +1,28 @@
+Equipe de Front End
+
+-UX: User Experience = Usabilidade
+
+-UI: User Interface = Design
+    Figma
+    Adobe XD
+
+-Desenvolvedor: programador Web = HTML, CSS, JavaScript, Frameworks
+
+Cores:
+Podemos representar as cores no CSS de 3 formas:
+    Através do nome da cor -> Red
+    Hexadecimal -> 0 a 9 e A a F
+    RGB -> valor_red, valor_green, valor_blue
+    R(0...255) G(0...255) B(0...255)
+    255 = FF
+    00 00 00 = black
+    FF FF FF = white
+    FF 00 00 = Red
+    00 FF 00 = green
+    00 00 FF = blue
+
+Sistemas numéricos:
+    Binário: 0 1
+    Octal: 0 1 2 3 4 5 6 7
+    Decimal: 0 1 2 3 4 5 6 7 8 9
+    Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F

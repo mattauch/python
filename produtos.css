@@ -1,0 +1,108 @@
+header {
+    background-color: #d7efb0;
+    padding: 60px 0;
+
+}
+
+.painel {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+
+}
+
+
+nav li {
+    /* block na vertical (padrão)
+    inline na horizontal
+    */
+    display: inline;
+    margin: 0 0 0 30px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #413024;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #d0bc7c;
+    text-decoration: underline;
+
+}
+
+.lista-produtos {
+    width: 940px;
+    margin: 30px auto                                                                                                                                                                                                                                                                      ;
+}
+
+.lista-produtos li{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: center;
+   /* background-color: #d0bc7c;*/
+    margin: 0 1%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    
+    border: 2px dashed #09301e;
+    border-radius: 10px;
+/*
+    border-color: #413024;
+    border-width: 2px;
+    border-style: dashed;
+*/
+}
+/*pseudo-classe CSS:
+:hover, :active, :link, :visited, :firs-child, :nth-child, etc*/
+
+.lista-produtos li:hover{
+    border-color: #d0bc7c;
+}
+
+.lista-produtos li:active{
+    border-color: coral;
+}
+
+.lista-produtos li:hover h2{
+    font-size: 32px;
+}
+
+.lista-produtos h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.desc{
+    font-size:18px;
+    margin-bottom: 10px;
+}
+
+.preco{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer{
+    background: url("bg.jpg");
+    text-align: center;
+    padding-top: 30px 0;
+}
+
+.copyright{
+    color: cornsilk;
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: bold;
+}

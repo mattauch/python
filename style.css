@@ -1,0 +1,119 @@
+head {
+    color: #192706;
+}
+
+
+#texto {
+    background-color: #eaeacf;
+    margin: 40px;
+    padding: 30px 20px 30px 20px;
+
+}
+
+.banner {
+    width: 80%;
+    height: 300px;
+    margin-left: 180px;
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+p {
+    text-align: center;
+
+}
+
+#missão {
+    font-size: 20px;
+    color: #586e3a;
+}
+
+strong {
+    color: #9b8620;
+
+}
+
+#produtos {
+    background-color: #d6d878;
+    margin: 40px;
+
+}
+
+.produtos {
+    width: 20%;
+
+}
+
+.produtos2 {
+    width: 20%;
+    margin-left: 10%;
+
+}
+
+h2 {
+    font-size: 30px;
+    color: #192706;
+    text-align: center;
+}
+
+ul {
+    /* propriedades de texto: block, inline ou inline-block 
+    block- sempre vai ocupar a linha
+    inline - não permite alterar espaçamento interno e externo
+    inline-block - posso alterar espaçamento e largura e ocupa somente o conteúdo*/
+    display: inline-block;
+    vertical-align: top;
+    line-height: 2.0em;
+    width: 20%;
+    margin-left: 10%;
+    font-size: 20px;
+    margin: 40px;
+}
+
+.item {
+    font-style: italic;
+    color: #192706;
+
+}
+
+.form {
+    text-align: justify;
+    font-size: 20px;
+    background-color: #d6d878;
+    margin: 40px;
+
+}
+
+#botao {
+    display: flex;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.opn {
+    text-align: justify;
+    font-size: 20px;
+    background-color: #d6d878;
+    margin: 40px;
+
+
+}
+
+#botao2 {
+    display: flex;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.lab {
+    width: 200px;
+    display: inline;
+
+}
