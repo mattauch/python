@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px 20px 0; /*cima direita baixo esquerda*/
+}
+
+button:hover{
+    background-color: cornflowerblue;
+}
+
+#pagina {
+    width: 100%;
+    height: 90%;
+    background-color: snow;
+    position: relative;
+    /*posição em relação com a div*/
+}
+
+#imagem {
+    position: absolute;
+    /*relação a algum outro elemento -> elemento que eu quero mover*/
+    top: 180px;
+    left: 0px;
+    margin-left: 0px;
+    opacity: 1;
+}

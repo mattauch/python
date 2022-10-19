@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        function vermelho() {
+            h1 = document.getElementsByTagName('h1')[0];
+            h1.style.color = 'red';
+            h1.innerHTML = 'VERMELHO';
+        }
+
+        function azul() {
+            h1 = document.getElementById('msg')
+            h1.style.color = 'blue';
+            h1.innerHTML = 'AZUL';
+        }
+
+        function verde() {
+            h1 = document.querySelector('#msg')
+            h1.style.color = 'green';
+            h1.innerHTML = 'VERDE';
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1 id="msg">Hello World</h1>
+    <h1>Hello Moon</h1>
+    <button id="red" onclick="vermelho()">Vermelho</button>
+    <button id="blue" onclick="azul()">Azul</button>
+    <button id="green" onclick="verde()">Verde</button>
+
+</body>
+
+</html>
