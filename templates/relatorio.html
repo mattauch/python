@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Relatório</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="container">
+
+        {% with mensagens = get_flashed_messages() %}
+
+    <ul class="list-unstyled">
+        {% for msg in mensagens %}
+        <li class="alert alert-success">{{ msg }}</li>
+        {% endfor%}
+    </ul>
+
+    {% endwith %}
+
+        <div class="'page-header">
+        <h1>{{titulo|title}}</h1>
+        </div>
+
+        <table class="table table-striped table-responsive table-bordered">
+            <thead class="thead-default">
+            <tr>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Preço Unitário</th>
+                <th>Quant. Estoque</th>
+            </tr>
+            </thead>
+
+             {% for produto in produtos %}
+            <tr>
+                <td>{{produto.id}}</td>
+                <td>{{produto.descricao}}</td>
+                <td>{{produto.preco}}</td>
+                <td>{{produto.quantidade}}</td>
+                <td>
+                    <a href="{{url_for('editar', id=produto.id)}}">Editar</a>
+                    <a href="{{url_for('deletar', id=produto.id)}}">Deletar</a>
+                </td>
+
+            </tr>
+            {% endfor %}
+        </table>
+
+        <form action="{{url_for('cadastrar')}}" method="get">
+            <button type="submit" class="btn btn-info">Cadastrar</button>
+
+        </form>
+
+    </div>
+
+
+</body>
+</html>
