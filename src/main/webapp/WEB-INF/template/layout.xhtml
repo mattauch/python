@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999.xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+	<title><ui:insert name="titulo" />SysFarEE 1.0</title>
+	<h:outputStylesheet library="biblioteca" name="estilo.css" />
+</h:head>
+
+<h:body>
+
+	<header style="background-color: rgb(156, 156, 156)">
+		<h:graphicImage
+			value="#{resources['biblioteca:header.png']}"/>
+
+		<div style="float: right; margin-right: 20px; margin-top: 8px">
+			Bem vindo #{usuario.nome}</div>
+	</header>
+
+	<div id="conteudo">
+		<h:form>
+
+			<p:menubar style="margin-top:-20px; margin-botton:20px">
+				<p:submenu label="Cadastrar">
+					<p:menuitem value="Cliente"
+						action="/cadastraCliente?faces-redirect=true" />
+					<p:menuitem value="Fornecedor" action="/cadastraFornecedor?faces-redirect=true" />
+					<p:menuitem value="Produto" action="/cadastraProduto?faces-redirect=true" />
+				</p:submenu>
+
+				<p:submenu label="Consultar">
+
+					<p:menuitem value="Cliente" action="/consultaCliente?faces-redirect=true" />
+					<p:menuitem value="Fornecedor" action="/consultaFornecedor?faces-redirect=true" />
+					<p:menuitem value="Produto" action="/consultaProduto?faces-redirect=true" />
+				</p:submenu>
+
+				<p:submenu label="Sistema">
+					<p:menuitem value="Sobre" oncomplete="PF('about').show()"/>
+					<p:menuitem value="Sair" action="#{loginMB.logout}"/>
+				</p:submenu>
+
+			</p:menubar>
+		</h:form>
+		
+	<ui:insert name="corpo"/>
+	
+	</div>
+	
+	<footer>
+		Sistema de Farmácia - versão EE - SOFTGRAF Cursos Avançados - Rua Santana, 820 - Centro - Ponta Grossa PR - Fone: (42) 3028-0449 - CEP 84010-320	
+	</footer>
+	
+	<p:dialog header="SysFar EE 1.0" widgetVar="about" modal="true" resizable="false" draggable="false" showEffect="clip" hideEffect="fold">
+	<h:graphicImage value="https://softgraf.com/cursojava/farmaciaEE/about/sysfar.gif"/>
+	</p:dialog>
+
+
+</h:body>
+
+
+
+
+</html>
